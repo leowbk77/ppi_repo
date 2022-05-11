@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de cliente</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Cadastro</h1>
+        </header>
+        <form action="cadastraCliente.php" method="post">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <label for="username">*Nome:</label>
+                    <input type="text" name="useraname" id="username" minlength="2" maxlength="50" required autofocus>
+                </div>
+                <div>
+                    <label for="mail">*Email:</label>
+                    <input type="email" name="mail" id="mail" required>
+                </div>
+                <div>
+                    <label for="cpf">*CPF:</label>
+                    <input type="text" name="cpf" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                </div>
+                <div>
+                    <label for="idade">*Idade:</label>
+                    <input type="number" name="idade" id="idade" required>
+                </div>
+                <div>
+                    <label for="telf">*Telefone:</label>
+                    <input type="tel" name="telf" id="telf" required>
+                </div>
+                <div>
+                    <label for="birth">Data de nascimento:</label>
+                    <input type="date" name="birth" id="birth">
+                </div>
+                <div>
+                    <label for="gen">Gênero:</label>
+                    <select name="gen" id="gen">
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                        <option value="NA" selected hidden>Não Especificado</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="estcivil">Estado civil:</label>
+                    <div>
+                        <input type="radio" name="estcivil" id="solteiro" value="solteiro">
+                        <label for="solteiro">Solteiro(a)</label>
+                        <input type="radio" name="estcivil" id="casado" value="casado">
+                        <label for="casado">Casado(a)</label>
+                        <input type="radio" name="estcivil" id="divorciado" value="divorciado">
+                        <label for="divorciado">Divorciado(a)</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="optfield">Campo Adicional:</label>
+                    <input type="text" name="optfield" id="optfield" value="adicional" readonly>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Endereço de Entrega</legend>
+                <div>
+                    <label for="cep">*CEP:</label>
+                    <input type="text" name="cep" id="cep" pattern="\d{5}-\d{3}" required>
+                </div>
+                <div>
+                    <label for="logrtype">*Tipo de logradouro:</label>
+                    <select name="logrtype" id="logrtype" required>
+                        <option value="rua">Rua</option>
+                        <option value="avenida">Avenida</option>
+                        <option value="praça">Praça</option>
+                    </select>
+                </div>
+                    <label for="logr">*Logradouro</label>
+                    <input type="text" name="logr" id="logr" required>
+                <div>
+                    <label for="bairro">*Bairro</label>
+                    <input type="text" name="bairro" id="bairro" required>
+                </div>
+                <div>
+                    <label for="cidade">*Cidade</label>
+                    <input type="text" name="cidade" id="cidade" required>
+                </div>
+                <div>
+                    <label for="estado">*Estado</label>
+                    <input type="text" name="estado" id="estado" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informações adicionais</legend>
+                <div>
+                    <label for="intrst">Interesses:</label>
+                    <div>
+                        <input type="checkbox" name="intrst" id="filmes" value="filmes">
+                        <label for="filmes">Filmes</label>
+                        <input type="checkbox" name="intrst" id="informatica" value="informatica">
+                        <label for="informatica">Informática</label>
+                        <input type="checkbox" name="intrst" id="games" value="games">
+                        <label for="games">Games</label>
+                        <input type="checkbox" name="intrst" id="livros" value="livros">
+                        <label for="livros">Livros</label>
+                        <input type="checkbox" name="intrst" id="roupas" value="roupas">
+                        <label for="roupas">Roupas</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="filein">Arquivo:</label>
+                    <input type="file" name="filein" id="filein">
+                </div>
+                <div>
+                    <label for="txtin">Informação Complementar:</label>
+                    <div>
+                        <textarea name="txtin" id="txtin" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="button">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
