@@ -6,6 +6,11 @@ body {
     line-height: 1.5;
     padding: 2% 4%;
 }
+@media(max-width: 600px) {
+body {
+    width: 95%;
+}
+}
 main {
     background-color: white;
     margin: 2% auto;
