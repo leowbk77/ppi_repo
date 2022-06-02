@@ -19,15 +19,32 @@ main {
     border-color: gray;
     border-style: solid;
 }
-header, footer, nav {
+header {
     background-color: #555;
     color: #eee;
+	text-align: center;
     border-radius: 10px;
     border-color: gray;
     border-style: solid;
-    text-align: center;
-    margin: 5px 0px 0px;
-    padding: 1% 4%;
+}
+footer {
+    background-color: #555;
+    color: #eee;
+	padding: 1% 4%;
+	text-align: center;
+    border-radius: 10px;
+    border-color: gray;
+    border-style: solid;
+}
+nav {
+	background-color: #555;
+	color: #eee;
+	margin: 5px 0px 0px;
+	padding: 1% 4%;
+	text-align: center;
+    border-radius: 10px;
+	position: sticky;
+    top: 0;
 }
 nav ul {
     margin: 0%;
@@ -55,3 +72,4 @@ h2 {
     border-radius: 5px;
     box-shadow: 5px 5px 5px gray;
 }
+
