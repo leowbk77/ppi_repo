@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Formulário</title>
+    <style>
+        main {
+            width: 95%;
+            border: 2px solid skyblue;
+            border-radius: 5px;
+            padding: 2px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="" class="row g-2">
+            <div class="col-md-9 form-floating">
+                <input type="text" name="inputNome" id="inputNome" class="form-control" placeholder=" ">
+                <label for="inputNome" class="form-label">Nome Completo</label>
+            </div>
+            <div class="col-md-3 form-floating">
+                <input type="text" class="form-control" id="inputCPF" placeholder=" ">
+                <label for="inputCPF" class="form-label">CPF</label>
+            </div>
+
+            <div class="col-md-9 form-floating">
+                <input type="email" class="form-control" id="inputEmail" placeholder=" ">
+                <label for="inputEmail" class="form-label">Email</label>
+            </div>
+            <div class="col-md-3 form-floating">
+                <input type="password" class="form-control" id="inputSenha" placeholder=" ">
+                <label for="inputSenha" class="form-label">Senha</label>
+            </div>
+
+            <div class="col-md-2 form-floating">
+                <input type="text" class="form-control" name="inputCEP" id="inputCEP" placeholder=" ">
+                <label for="inputCEP" class="form-label">CEP</label>
+            </div>
+            <div class="col-md-10 form-floating">
+                <input type="text" class="form-control" id="inputEndereco" placeholder=" ">
+                <label for="inputEndereco">Endereço</label>
+            </div>
+
+            <div class="col-md-5 form-floating">
+                <input type="text" class="form-control" id="inputBairro" placeholder=" ">
+                <label for="inputBairro">Bairro</label>
+            </div>
+            <div class="col-md-5 form-floating">
+                <input type="text" class="form-control" id="inputCidade" placeholder=" ">
+                <label for="inputCidade">Cidade</label>
+            </div>
+            <div class="col-md-2">
+                <label for="inputEstado" class="form-label">Estado</label>
+                <select name="inputEstado" id="inputEstado" class="form-select">
+                    <option selected >sel.</option>
+                    <option>MG</option>
+                </select>
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="termos">
+                    <label class="form-check-label" for="termos">Concordo com os termos</label>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                      </svg>
+                Cadastrar
+                </button>
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>
