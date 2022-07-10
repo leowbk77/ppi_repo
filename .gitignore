@@ -7,4 +7,6 @@
 !*.txt
 !*.php
 !*.js
+!*.sql
+ExBD/
 trab-index.html
