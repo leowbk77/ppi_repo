@@ -8,3 +8,4 @@ praticas de ppi
 * [trab5](https://github.com/leowbk77/ppi_repo/tree/main/trab5) Bootstrap
 * [trab6](https://github.com/leowbk77/ppi_repo/tree/main/trab6) PHP
 * [trab7](https://github.com/leowbk77/ppi_repo/tree/main/trab7) PHP MYSQL
+* [trab8](https://github.com/leowbk77/ppi_repo/tree/main/trab8) AJAX-XHR
